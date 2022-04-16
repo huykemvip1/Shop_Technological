@@ -1,0 +1,47 @@
+*{
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,rgb(10, 131, 188),rgb(82, 158, 193));
+}
+.bar_container{
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    border-bottom: 1px solid white ;
+}
+.bar_container .title{
+    padding-left: 40px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+.bar_container .header{
+    display: flex;
+    list-style: none;
+    padding-left: 700px;
+    padding-top: 25px;
+}
+.bar_container .header li{
+    padding-left: 50px;
+}
+.bar_container .header li a{
+    text-decoration: none;
+    color: white;
+}
+.bar_container .name_account{
+    display: flex;
+    padding-left: 80px;
+}
+.bar_container .name_account p{
+    margin-top: 15px;
+}
+.bar_container .name_account img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 60px;
+}
