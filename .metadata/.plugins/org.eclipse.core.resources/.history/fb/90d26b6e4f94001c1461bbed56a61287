@@ -1,0 +1,59 @@
+package com.ShopTechnological.Application.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ShopTechnological.Application.domain.Account;
+import com.ShopTechnological.Application.service.AccountService;
+
+import lombok.extern.slf4j.Slf4j;
+
+@RestController
+@RequestMapping("/manager")
+@Slf4j
+public class ManagerController {
+	@Autowired
+	private AccountService accountService;
+	
+	@GetMapping("/all")
+	public ResponseEntity<List<Account>> getAll() {
+		
+		return 
+	}
+	@GetMapping("/details/{username}")
+	public ResponseEntity<Account> getOne(@PathVariable("id") String username) {
+		return null;
+	}
+	
+	// Resource add Account
+	@PostMapping("/add")
+	@ResponseBody
+	public ResponseEntity addAccount(@RequestBody Account account){
+		log.info(" :::"+account);
+		accountService.addAccount(account);
+		return ResponseEntity.ok().build();
+	}
+	
+	@PutMapping("/update/{username}")
+	public ResponseEntity<Account> updateAccount(@PathVariable("id") String username,
+			@RequestBody Account account){
+		return null;
+	}
+	
+	@DeleteMapping("/delete/{id}")
+	public ResponseEntity<Account> deleteAccount(@PathVariable("id") int id,
+			@RequestBody Account account){
+		return null;
+	}
+}
