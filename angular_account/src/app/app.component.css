@@ -5,6 +5,7 @@
 }
 body{
     background: linear-gradient(to right,rgb(10, 131, 188),rgb(82, 158, 193));
+    height: 100vh;
 }
 .bar_container{
     width: 100%;
@@ -24,6 +25,11 @@ body{
     list-style: none;
     padding-left: 700px;
     padding-top: 25px;
+    
+}
+.bar_container .title{
+    animation-name: title_animation;
+    animation-duration: 5s;
 }
 .bar_container .header li{
     padding-left: 50px;
@@ -44,4 +50,40 @@ body{
     height: 60px;
     object-fit: cover;
     border-radius: 60px;
+}
+.bar_container .name_account .submenu_account{
+    display: none;
+    position: absolute;
+    padding-left: 10px;
+    list-style: none;
+    top: 68px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-end-end-radius: 10px;
+}
+.bar_container .name_account .submenu_account li{
+    padding: 10px;
+}
+.bar_container .name_account .submenu_account li a{
+    color: white;
+    text-decoration: none;
+    padding-top: 2px;
+}
+.bar_container .name_account:hover .submenu_account{
+    display: block;
+}
+.bar_container .name_account .submenu_account li:hover{
+    color: white;
+    background-color: rgb(53, 115, 223);
+}
+@keyframes title_animation {
+    30% {
+        color: white;
+        padding-left: 0px;
+    }
+    50% {
+        color: rgb(53, 115, 223);
+    }
+    100% {
+        color: white;
+    }
 }

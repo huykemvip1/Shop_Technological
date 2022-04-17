@@ -1,0 +1,60 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    color: white;
+}
+.container img{
+    object-fit: cover;
+    border-radius: 10px;
+ }
+.container .sub_container{
+    display: flex;
+}
+
+.container .sub_container .form{
+    border: 3px white solid;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.container .sub_container .form .title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 370px;
+}
+.container .form form .element{
+  display: flex;
+}
+.container .form form .element .element_1 div,
+.container .form form .element .element_2 div{
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.container .form form .element input{
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    width: 250px;
+}
+.container .form .element_2{
+   padding-left: 60px;
+}
+.container .form .btn_registry{
+   padding: 10px 10px;
+   outline: none;
+   border-radius: 10px;
+   margin-top: 40px;
+   margin-left: 370px;
+}
+.container .form .btn_registry:hover{
+    color: white;
+    background-color: rgb(53, 115, 223);
+}
