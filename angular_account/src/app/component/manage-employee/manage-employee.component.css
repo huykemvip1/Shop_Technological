@@ -1,0 +1,36 @@
+h1 , a h3 {
+    text-align: center;
+    color: rgb(225, 250, 2);
+}
+a {
+    text-decoration: none;
+}
+a h3:hover{
+    color: white;
+}
+
+.container{
+    display: block;
+}
+.container table tr th{
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.container tr,
+.container th{
+    border-bottom: 2px white solid;
+}
+.container table{
+    border-top: 2px white solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container table tr th a button{
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.container table tr th a button:hover{
+    color: white;
+    background-color: rgb(53, 115, 223);
+}
